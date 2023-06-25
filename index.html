@@ -38,7 +38,7 @@
             <h2 class="col-md-12 text-center">
                 <b>CoNi-MPC</b>: <b>Co</b>operative <b>N</b>on-<b>i</b>nertial Frame Based <b>M</b>odel <b>P</b>redictive <b>C</b>ontrol</br> 
                 <small>
-                RA-L 2023
+                RA-L 2023 (under review)
                 </small>
             </h2>
         </div>
@@ -98,12 +98,18 @@
                         <li>
                             <a href="https://arxiv.org/abs/2306.11259"> 
                             <image src="img/coni_mpc_paper_image.jpg" height="60px">
-                                <h4><strong>Paper</strong></h4>
+                                <h4><strong>Preprint</strong></h4>
                             </a>
                         </li>
                         <li>
                             <a href=""> <!-- TODO -->
                             <image src="img/bilibili_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""> <!-- TODO -->
+                            <image src="img/youtube_icon.png" height="60px">
                                 <h4><strong>Video</strong></h4>
                             </a>
                         </li>
@@ -165,7 +171,6 @@ Furthermore, we conducted considerable real robot experiments, employing laborat
                 </p>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h1>
@@ -174,7 +179,7 @@ Furthermore, we conducted considerable real robot experiments, employing laborat
                 <img src="img/coni_mpc_system_framework.svg" width="100%"/>
                 <p class="text-justify"></br>
 The relative state is defined as the relative position ${}^N\boldsymbol{p}_B$ ($N$ and $B$ refer to the target non-inertial frame frame and the agent body frame, respectively), the relative velocity ${}^N\boldsymbol{v}_B$, and the relative orientation (quaternion) ${}^N\boldsymbol{q}_B$. The system also incorporates the angular velocity ${}^N\boldsymbol{\Omega}_N$ and linear acceleration ${}^N\boldsymbol{a}_N$ of the target from a low-cost MEMS IMU.
-The relative estimation can be generated either from a motion capture system or directly from our previous work of CREPES, a relative estimation device. 
+The relative estimation can be generated either from a motion capture system or directly from our previous work of <a href="https://arxiv.org/abs/2302.01036">CREPES</a>, a relative estimation device. 
 The proposed control method CoNi-MPC works as a high-level thrust and body rate controller and a low-level multi-stage PID controllers is used to track the thrust and body rate.
 The reference can be classified into two categories, fixed-point and fixed-plan schemes. The first can be used for leader-follower fashioned control, and the latter can be used for more complex tasks such as landing, orbit flight, and even more demanding ring crossing.
                 </p>
@@ -228,6 +233,17 @@ The reference can be classified into two categories, fixed-point and fixed-plan 
                 </h2>
                 <video class="lazy" id="v_fixed_plan_more" width="100%" autoplay loop muted>
                     <source data-src="img/fixed_plan_compressed.mp4" />
+                </video>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <h2>
+                    Outdoor experiment
+                </h2>
+                <p>
+                    Note there is <b>no GPS/SLAM/anchors</b> technology used to realize this task. 
+                </p>
+                <video class="lazy" id="v_outdoor" width="100%" autoplay loop muted>
+                    <source data-src="img/outdoor_compressed.mp4" />
                 </video>
             </div>
         </div>
