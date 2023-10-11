@@ -5,8 +5,24 @@
 
 ## Introduction
 
-CoNi-MPC, **Co**operative **N**on-**i**nertial Frame Based Model Predictive Control,  is a control framework to control the quadrotor flying in a non-inertial frame using non-linear model predictive control.
+CoNi-MPC, **Co**operative **N**on-**i**nertial Frame Based **M**odel **P**redictive **C**ontrol,  is a control framework to control the quadrotor flying in a non-inertial frame using non-linear model predictive control.
 This repo contains the necessary code and dependencies to run it.
+
+If you are interested in this project, you can find more on the project webpage:
+- https://fast-fire.github.io/CoNi-MPC/ 
+and there's a preprint version for this project on arXiv:
+- https://arxiv.org/abs/2306.11259
+
+If you find this project useful for your own research work, 
+please cite it with:
+```text
+@article{zhang2023coni,
+  title={CoNi-MPC: Cooperative Non-inertial Frame Based Model Predictive Control},
+  author={Zhang, Baozhe and Chen, Xinwei and Li, Zhehan and Beltrame, Giovanni and Xu, Chao and Gao, Fei and Cao, Yanjun},
+  journal={arXiv preprint arXiv:2306.11259},
+  year={2023}
+}
+```
 
 ## Prerequisites
 - ACADOtoolkit (https://acado.github.io/)
