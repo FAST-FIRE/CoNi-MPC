@@ -10,6 +10,7 @@ This repo contains the necessary code and dependencies to run it.
 
 If you are interested in this project, you can find more on the project webpage:
 - https://fast-fire.github.io/CoNi-MPC/ 
+
 and there's a preprint version for this project on arXiv:
 - https://arxiv.org/abs/2306.11259
 
