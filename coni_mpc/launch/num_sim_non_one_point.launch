@@ -1,0 +1,15 @@
+<launch>
+  <arg name="r" default="0.0"></arg>
+  <arg name="v" default="0.0"></arg>
+  <arg name="w" default="0.01"></arg>
+
+
+  <node pkg="coni_mpc" type="num_sim_non_one_point_node" name="num_sim_non_one_point_node" output="screen" 
+    args="-r $(arg r) -v $(arg v) -w $(arg w)">
+    <rosparam file="$(find coni_mpc)/parameters/num_sim_non_one_point.yaml" />
+    <!-- <rosparam file="$(find coni_mpc)/parameters/traj_params.yaml" /> -->
+  </node>
+  <node type="rviz" name="rviz_non" pkg="rviz" args="-d $(find coni_mpc)/rviz/non_inertial.rviz" />
+  <node type="rviz" name="rviz_world" pkg="rviz" args="-d $(find coni_mpc)/rviz/world.rviz" />
+
+</launch>
