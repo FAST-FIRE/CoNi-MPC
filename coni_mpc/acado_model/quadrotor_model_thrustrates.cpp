@@ -133,7 +133,7 @@ int main( ){
                     - omega_non_y * omega_non_z * p_z
                     + 2 * (q_y * q_z - q_w * q_x) * T - a_imu_y;
   f << dot(v_z) ==  beta_non_y * p_x - beta_non_x * p_y + 2 * omega_non_y * v_x - 2 * omega_non_x * v_y
-                    - omega_non_x * omega_non_z * p_x - omega_non_y * omega_non_z * p_z
+                    - omega_non_x * omega_non_z * p_x - omega_non_y * omega_non_z * p_y
                     + (omega_non_y * omega_non_y + omega_non_x * omega_non_x) * p_z
                     + (1 - 2 * q_x * q_x - 2 * q_y * q_y) * T - a_imu_z;
   f << dot(q_w) ==  0.5 * (omega_non_x*q_x + omega_non_y*q_y + omega_non_z*q_z - q_x*w_x - q_y*w_y - q_z*w_z);
