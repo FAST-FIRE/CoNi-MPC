@@ -41,7 +41,7 @@ sudo apt install libgflags-dev
 
 ## Build
 
-Before you proceed, you need to first go to directory `coni_mpc/acado_model/` to check code of the MPC model (in ACADO) is successfully built. Please read the README file in that directory in advance.
+Before you proceed, you need to first go to the directory `coni_mpc/acado_model/` to check the code of the MPC model (in ACADO) is successfully built. Please read the README file in that directory in advance. The generated MPC code is contained in this directory. **If you find that setting up the ACADO environment is tedious, you can safely ignore this part.** However, if you want to modify the MPC model for your purpose, we recommend you to refer ACADO's documentation and try to build and generate the code yourself. In that way, you will manage your building process. 
 
 
 After you install the dependencies, you can use 
