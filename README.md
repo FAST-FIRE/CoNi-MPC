@@ -30,7 +30,7 @@ please cite it with:
 
 First, clone this repo
 ```bash
-git clone https://github.com/zhangbaozhe/CoNi-MPC.git
+git clone https://github.com/FAST-FIRE/CoNi-MPC.git
 ```
 After cloning the repo, there are some dependencies that you should install 
 
